@@ -1,0 +1,79 @@
+---
+title: About this Release
+description: WSO2 Open Banking 3.0 is the successor of WSO2 Open Banking 2.0.  # generated from the first paragraph; a writer should improve it
+type: concept
+sidebar_position: 5
+---
+
+**WSO2 Open Banking 3.0** is the successor of WSO2 Open Banking 2.0. It is a collection of technologies that increases the 
+speed and reduces the complexity of adopting open banking compliance. Instead of building a solution from scratch, you 
+can use WSO2 Open Banking to meet all legislative requirements with additional benefits beyond compliance. WSO2 Open Banking 
+comprises three modules:
+
+- **WSO2 Open Banking Identity Server Accelerator** runs on top of WSO2 Identity Server.
+- **WSO2 Open Banking API Manager Accelerator** runs on top of WSO2 API Manager.
+- **WSO2 Open Banking Business Intelligence Accelerator** runs on top of WSO2 Streaming Integrator.
+
+For more information on WSO2 Open Banking Accelerator, see the [Get Started](./open-banking.mdx) section.
+
+:::note
+WSO2 provides toolkits that offer compliance to the following open banking standards:
+
+- Open Banking Standard - UK
+- NextGenPSD2XS2A
+- Consumer Data Standards - Australia
+:::
+
+## What is new in this release
+
+#### WSO2 Open Banking Identity Server Accelerator
+
+- Generalized consent management support for common open banking use cases. For more information, see [Consent Management](../learn/consent-management/consent-management.mdx).
+- Extensible OAuth2/OIDC [authorization](../develop/consent-management/consent-management-authorize.mdx) and [authentication](../develop/token-flow-customization/jwt-access-tokens.mdx) 
+    flows to support any open banking requirement.
+- Accelerator implementation for [token endpoint](../learn/token-authentication.mdx) validation including:
+
+    - Transport layer certificate enforcement. 
+    - Token endpoint authentication method validation for regulatory use cases.
+
+- Mutual-TLS certificate-bound access tokens. For more information, see [Certificate-bound access tokens](../learn/token-authentication.mdx#certificate-bound-access-tokens).
+- Customizable Identifier first authentication.
+- [Customizable web app](../develop/consent-management/customize-consent-page.mdx) for consent approval during authentication. 
+- Extensible data publishing during the OAuth2/OIDC flows. For more information, see [Data Publishing](../develop/data-publishing/authentication-flow-for-data-publishing.mdx).
+
+#### WSO2 Open Banking API Manager Accelerator
+
+- Generalized implementation for [common open banking use cases](./quick-start-guide/try-out-flow.mdx):
+
+    - Consent enforcement
+    - eIDAS
+
+- [Executor framework](../develop/open-banking-gateway/custom-gateway-executor.mdx) to enforce different policies based on regulatory and other requirements.
+- Supports custom functional paths for [non-regulatory](../develop/open-banking-gateway/custom-request-router.mdx#handling-non-regulatory-apis) and [regulatory](../develop/open-banking-gateway/custom-gateway-executor.mdx) 
+    API flows such as Accounts, Payments, and 
+    Dynamic Client Registration.
+- [Request router implementation](../develop/open-banking-gateway/custom-request-router.mdx) to route request to specific functional paths.
+- Publish API invocation data from the Gateway. For more information, see [Custom Data Publishing](../develop/data-publishing/custom-data-publishing.mdx).
+- Custom throttling keys. For more information, see [Custom Throttling Keys](../develop/open-banking-gateway/custom-throttling-keys.mdx).
+
+#### WSO2 Open Banking Business Intelligence Accelerator
+
+- Siddhi Applications to process and persist events published from the open banking uses cases:
+
+    - Dynamic Client Registration
+    - User authentication and consent authorization
+    - Token issuance
+    - API invocations
+
+For more information, see [Data Publishing](../learn/data-publishing/data-publishing.mdx).
+
+## What has changed in this release
+
+WSO2 Open Banking 3.0 is an improved solution to support requirements in any open banking standard. WSO2 Open Banking 3.0 
+provides accelerators for each product to accelerate a generalized open banking requirement that can be extended to support 
+regulatory and other open banking requirements. Some significant changes in this release are,
+
+- Extensibility to support any open banking requirement on top of the base technology stack provided through the accelerator.
+- New WSO2 Updates tool to receive product updates in-place. 
+- Improved Consent Management dashboard for customers and Admin dashboard for bank officers to search, update, and revoke 
+    a consent.
