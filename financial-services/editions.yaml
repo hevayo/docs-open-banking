@@ -1,0 +1,6 @@
+# The {edition.*} variables of Open Banking: one block for every Self-hosted
+# version ({version} is filled in). No page uses them yet; productName is the
+# product's name in the source's pages.
+self-hosted:
+  displayName: Open Banking {version}
+  productName: WSO2 Open Banking Accelerator
