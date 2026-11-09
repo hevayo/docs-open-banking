@@ -1,0 +1,7 @@
+# The Doc space directory is owned by its team (owners.team in its docspace.yaml;
+# a placeholder until the team is named); the shared root files come from the
+# Platform template.
+* @wso2/open-banking-docs
+/financial-services/ @wso2/open-banking-docs
+/.github/ @wso2/docs-platform
+/.vscode/ @wso2/docs-platform

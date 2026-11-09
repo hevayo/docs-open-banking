@@ -1,0 +1,48 @@
+# Doc space manifest of Open Banking (schemas/docspace.schema.json in the
+# Platform), from the approved model (.scratch/open-banking-model/map.md).
+# The same file on docs-v2/main and every release branch: the main line's is
+# the one compose reads.
+schemaVersion: 1
+slug: financial-services
+# Model decision 7: the name readers see, the products-menu label's; the slug
+# stays financial-services (decision 2). Page text is not changed.
+displayName: Open Banking
+formerNames:
+  - Accelerator for Financial Services
+  - Open Banking Accelerator
+  - WSO2 Open Banking
+# Model decision 8: the shared Solutions section, kept by the Platform team.
+home: solutions
+# Model decision 11: a placeholder team, still to be created.
+owners:
+  team: open-banking-docs
+repo: hevayo/docs-open-banking
+editLinks: true
+issues:
+  repo: wso2/docs-open-banking
+# Model decisions 4 and 5: two Self-hosted Editions, branch per Edition (no
+# Cloud, so versions-only); 4.0.0, the newest, is latest. Branches are behind
+# the Site branch's branchPrefix docs-v2/: main is docs-v2/main.
+model: versions-only
+editions:
+  - id: 4.0.0
+    status: live
+  # Named: in a one-Doc-space repo 0.6.0 would default to release/3.0.0; the
+  # slug also makes its tags financial-services/3.0.0-docs.<n>.
+  - id: 3.0.0
+    status: live
+# Model decision 4: the Confluence versions, linked only, nothing imported
+# (the source's versions.json `doc` links).
+legacyVersions:
+  - id: 2.0.0
+    name: "Open Banking 2.0.0"
+    url: https://wso2docs.atlassian.net/wiki/spaces/OB200/
+  - id: 1.5.0
+    name: "Open Banking 1.5.0"
+    url: https://wso2docs.atlassian.net/wiki/spaces/OB150/
+  - id: 1.4.0
+    name: "Open Banking 1.4.0"
+    url: https://wso2docs.atlassian.net/wiki/spaces/OB140/
+  - id: 1.3.0
+    name: "Open Banking 1.3.0"
+    url: https://wso2docs.atlassian.net/wiki/spaces/OB130/
